@@ -1,8 +1,8 @@
 package edu.jcsc;
 
 import edu.jcsc.classes.cliente.PessoaFisica;
-import edu.jcsc.classes.cliente.extrato.Extrato;
 import edu.jcsc.classes.conta.ContaCorrente;
+import edu.jcsc.classes.extrato.Extrato;
 
 public class Main {
     public static void main(String[] args) {

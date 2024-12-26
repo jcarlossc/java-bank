@@ -1,4 +1,4 @@
-package edu.jcsc.classes.cliente.extrato;
+package edu.jcsc.classes.extrato;
 
 import edu.jcsc.classes.conta.Conta;
 import edu.jcsc.classes.transacao.Transacao;
