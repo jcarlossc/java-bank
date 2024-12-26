@@ -1,6 +1,7 @@
 package edu.jcsc;
 
 import edu.jcsc.classes.cliente.PessoaFisica;
+import edu.jcsc.classes.cliente.extrato.Extrato;
 import edu.jcsc.classes.conta.ContaCorrente;
 
 public class Main {
@@ -45,5 +46,8 @@ public class Main {
         System.out.println(cc1.getSaldo());
 
         System.out.println(cc2.getSaldo());
+
+        Extrato.getExtrato(cc2);
+        Extrato.getExtrato(cc1);
     }
 }
