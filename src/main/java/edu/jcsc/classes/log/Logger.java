@@ -17,7 +17,7 @@ public class Logger {
     private static Logger instancia;
     private PrintWriter criarLog;
     private static final String LOG_FILE = "logs.txt"; // Caminho do arquivo de log
-    private static final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final DateTimeFormatter formatar = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     /**
      * Construtor privado. 
@@ -51,7 +51,7 @@ public class Logger {
      */
     public void log(String nivel, String mensagem) {
         if (criarLog != null) {
-            String dataHora = LocalDateTime.now().format(formatter);
+            String dataHora = LocalDateTime.now().format(formatar);
             criarLog.println("[" + dataHora + "] [" + nivel + "] " + mensagem);
             criarLog.flush();
         }
