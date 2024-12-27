@@ -26,7 +26,7 @@ public class Historico implements Iterable<Transacao> {
     /**
      * Método addTransacao.
      * 
-     * @param transacao do tipo Transação
+     * @param transacao 
      */
     public void addTransacao(Transacao transacao) {
         this.transacoes.add(transacao);
@@ -50,7 +50,7 @@ public class Historico implements Iterable<Transacao> {
      */
     @Override
     public String toString() {
-        return "Historico [transacoes=" + transacoes + "]";
+        return "Histórico " + "[" + "Transacões: " + transacoes + "]";
     }
 
 }

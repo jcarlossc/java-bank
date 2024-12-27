@@ -1,5 +1,6 @@
 package edu.jcsc;
 
+import edu.jcsc.classes.cliente.Cliente;
 import edu.jcsc.classes.cliente.PessoaFisica;
 import edu.jcsc.classes.conta.ContaCorrente;
 import edu.jcsc.classes.extrato.Extrato;
@@ -9,6 +10,10 @@ public class Main {
         
         PessoaFisica pf1 = new PessoaFisica("carlos", "12345678944");
         System.out.println(pf1);
+
+        Cliente cliente = new Cliente("carlos", "12345678944");
+        System.out.println(cliente);
+
         PessoaFisica pf2 = new PessoaFisica("carlos", "12345678944");
         System.out.println(pf2);
 
@@ -49,5 +54,7 @@ public class Main {
 
         Extrato.getExtrato(cc2);
         Extrato.getExtrato(cc1);
+
+        
     }
 }

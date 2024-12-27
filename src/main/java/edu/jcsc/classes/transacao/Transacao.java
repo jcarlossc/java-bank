@@ -57,7 +57,7 @@ public abstract class Transacao {
      */
     @Override
     public String toString() {
-        return "Transacao " + "[" + "Transação: " + getTipoTransacao() + " | " + "Valor: R$ " + valor + " | " + "DataHora: " + getDataHora() + "]";
+        return "Transacao " + "[" + "Tipo: " + getTipoTransacao() + " | " + "Valor: R$ " + valor + " | " + "DataHora: " + getDataHora() + "]";
     }
     
 }
