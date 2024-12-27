@@ -1,9 +1,7 @@
 package edu.jcsc.classes.conta;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
-
 import edu.jcsc.classes.cliente.PessoaFisica;
 
 public class ContaCorrenteTest {
