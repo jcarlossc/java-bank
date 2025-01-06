@@ -10,6 +10,7 @@ public class PessoaFisicaTest {
     @Test
     void testToString() {
         String atual = pessoaFisica.toString();
-        assertEquals("PessoaFisica [Nome: carlos | Cpf: 12345678944]", atual, "O resultado deve ser igual a string.");
+        assertEquals("PessoaFisica [Nome: carlos | Cpf: 12345678944]", 
+            atual, "O resultado deve ser igual a string 'PessoaFisica [Nome: carlos | Cpf: 12345678944]'.");
     }
 }

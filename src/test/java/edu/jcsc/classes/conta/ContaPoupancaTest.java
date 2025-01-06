@@ -15,13 +15,13 @@ public class ContaPoupancaTest {
     void testDepositar() {
         cc1.depositar(500.00);
         Double atual = cc1.getSaldo();
-        assertEquals(500.00, atual, "O resultado deve ser 500.00");
+        assertEquals(500.00, atual, "O resultado deve ser igual ao Double 500.00.");
     }
 
     @Test
     void testGetTipoConta() {
         String atual = cc1.getTipoConta();
-        assertEquals("Conta Poupança", atual, "O resultado deve ser Conta Poupança");
+        assertEquals("Conta Poupança", atual, "O resultado deve ser igual a string 'Conta Poupança'.");
     }
 
     @Test
@@ -29,7 +29,7 @@ public class ContaPoupancaTest {
         cc1.depositar(500.00);
         cc1.sacar(400.00);
         Double atual = cc1.getSaldo();
-        assertEquals(100.00, atual, "O resultado deve ser 100.00");
+        assertEquals(100.00, atual, "O resultado deve ser igual ao Double 100.00.");
     }
 
     @Test
@@ -37,6 +37,6 @@ public class ContaPoupancaTest {
         cc1.depositar(500.00);
         cc1.transferir(cc2, 300.00);
         Double atual = cc2.getSaldo();
-        assertEquals(300.00, atual, "O resultado deve ser 300.00");
+        assertEquals(300.00, atual, "O resultado deve ser igual ao Double 300.00.");
     }
 }

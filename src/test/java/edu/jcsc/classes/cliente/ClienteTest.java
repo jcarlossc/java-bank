@@ -10,18 +10,19 @@ public class ClienteTest {
     @Test
     void testGetCpf() {
         String atual = cliente.getCpf();
-        assertEquals("44345678944", atual, "O resultado deve ser 44345678944");
+        assertEquals("44345678944", atual, "O resultado deve ser igual a string '44345678944'.");
     }
 
     @Test
     void testGetNome() {
         String atual = cliente.getNome();
-        assertEquals("jose", atual, "O resultado deve ser jose");
+        assertEquals("jose", atual, "O resultado deve ser igual a string 'jose'.");
     }
 
     @Test
     void testToString() {     
         String atual = cliente.toString();
-        assertEquals("Cliente [Nome: jose, Cpf: 44345678944]", atual, "O resultado deve ser igual a string");
+        assertEquals("Cliente [Nome: jose, Cpf: 44345678944]", 
+            atual, "O resultado deve ser igual a string 'Cliente [Nome: jose, Cpf: 44345678944]'.");
     }
 }

@@ -10,7 +10,7 @@ public class SaqueTest {
         Saque saque = new Saque(500.00);
         String atual = saque.getTipoTransacao();
         
-        assertEquals("Saque", atual, "O resultado deve ser igual a string Saque."); 
+        assertEquals("Saque", atual, "O resultado deve ser igual a string 'Saque'."); 
     }
     
 }

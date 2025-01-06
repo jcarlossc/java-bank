@@ -10,7 +10,7 @@ public class TransacaoTest {
         Deposito deposito = new Deposito(500.00);
         String atual = deposito.getTipoTransacao();
         
-        assertEquals("Depósito", atual, "O resultado deve ser igual a string Depósito."); 
+        assertEquals("Depósito", atual, "O resultado deve ser igual a string 'Depósito'."); 
     }
 
     @Test
@@ -18,7 +18,7 @@ public class TransacaoTest {
         Deposito deposito = new Deposito(500.00);
         Double atual = deposito.getValor();
         
-        assertEquals(500.00, atual, "O resultado deve ser igual a 500.00"); 
+        assertEquals(500.00, atual, "O resultado deve ser igual ao Double 500.00."); 
     }
 
 }
